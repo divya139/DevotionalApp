@@ -1,0 +1,12 @@
+.upload{
+    padding-top:35px;
+    padding-bottom:35px;
+    padding-left: 30px;
+    border: 1px solid red; 
+    width:700px;
+   
+}
+.uploadParent
+{
+    padding-top:35px;
+}

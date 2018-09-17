@@ -1,0 +1,11 @@
+
+<div class="table">
+    <ul>
+            <li   *ngFor="let song of songs" >
+              <div class="gallery"><a routerLink="/detail/{{song.id}}"> {{song.title}}<br><input type='image' src={{song.image}} width="140" height="100"> </a>  </div>
+               
+            </li>
+          
+        </ul> 
+</div>
+

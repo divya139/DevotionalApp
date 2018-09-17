@@ -1,0 +1,29 @@
+.page {
+    width: 210mm;
+   
+    padding: 20mm;
+    margin: 10mm auto;
+    background: rgba(226, 225, 225, 0.774);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+@page {
+    size: A4;
+    margin: 0;
+}
+.angular-with-newlines {
+    white-space: pre-wrap;
+}
+img {
+    /* position: absolute; */
+    float: left;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+.header h1 {
+    position: relative;
+    font-style: normal;
+    text-align: center;
+    bottom:10px;
+  }

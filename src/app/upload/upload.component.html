@@ -1,0 +1,62 @@
+<div align="center" class="uploadParent">
+  <div align="left" class="upload">
+    <div class="row">
+      <div class="col-md-3">
+        <label>
+          <b>Title</b>
+        </label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="titleId" [(ngModel)]="musicDetails.title">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label>
+          <b>Type</b>
+        </label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="typeId" [(ngModel)]="musicDetails.type">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <label>
+          <b>Upload</b>
+        </label>
+      </div>
+      <div class="col-md-9">
+        <input type="file" id="fileId" (change)='fileChanged($event)'>
+      </div>
+
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+        <label>
+          <b>Upload Img</b>
+        </label>
+      </div>
+      <div class="col-md-9">
+        <input type="file" id="fileImgId" (change)='fileChangedImg($event)'>
+      </div>
+
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        <button (click)="submit()">Submit</button>
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+  </div>
+
+</div>

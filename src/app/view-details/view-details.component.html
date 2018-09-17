@@ -1,0 +1,10 @@
+<div class="page">
+<div *ngIf="musicDetails">
+    <div class="header"><h1> {{musicDetails.title}}</h1></div>
+            
+    <div class="img"><input type='image' src={{musicDetails.image}} width="100%" height="100%"></div>
+   
+  
+    <div class="angular-with-newlines" [innerHtml]="musicDetails.file"></div>
+</div>
+</div>
