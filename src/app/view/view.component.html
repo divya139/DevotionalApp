@@ -2,8 +2,7 @@
 <div class="table">
     <ul>
             <li   *ngFor="let song of songs" >
-              <div class="gallery"><a routerLink="/detail/{{song.id}}"> {{song.title}}<br><input type='image' src={{song.image}} width="140" height="100"> </a>  </div>
-               
+              <div class="gallery"><a routerLink="/detail/{{song.id}}"> {{song.title}}<br><input type='image' src="http://ec2-18-188-41-137.us-east-2.compute.amazonaws.com:8080/{{song.image}}" width="140" height="100"> </a>  </div>
             </li>
           
         </ul> 

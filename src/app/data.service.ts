@@ -17,7 +17,7 @@ export class DataService {
    getMusicDetails():Observable<Music[]>
    {
       // return this._http.get('/viewSongs').map(response => response.json().data).subscribe((data)=>{console.log(data);
-      return this._http.get('/musicDetails').map(this.extractData).catch(this.handleErrorObservable);
+      return this._http.get('http://ec2-18-188-41-137.us-east-2.compute.amazonaws.com:8080/musicDetails').map(this.extractData).catch(this.handleErrorObservable);
     
        
   
@@ -41,7 +41,7 @@ export class DataService {
    postMusicDetails(musicDetails)
    {
    
-  this._http.post('/insert',musicDetails).subscribe(
+  this._http.post('http://ec2-18-188-41-137.us-east-2.compute.amazonaws.com:8080/insert',musicDetails).subscribe(
     res => {
         const response = res.text();
     }
@@ -49,7 +49,7 @@ export class DataService {
    }
    getMusicDetailsID(id)
    {
-    return this._http.get('/musicDetails/'+id).map(this.extractDataID).catch(this.handleErrorObservable);
+    return this._http.get('http://ec2-18-188-41-137.us-east-2.compute.amazonaws.com:8080/musicDetails/'+id).map(this.extractDataID).catch(this.handleErrorObservable);
    }
 
 }
